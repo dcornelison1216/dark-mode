@@ -10,7 +10,7 @@ export const useDarkMode = (key, initialState) => {
     } else if(!isDark) {
       document.body.classList.remove('dark-mode')
     }
-  }, darkMode);
+  }, isDark);
 
   return [isDark, setIsDark];
 };
